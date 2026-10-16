@@ -152,6 +152,10 @@ py client.py
 
 ![Tugas 2 - Menjalankan klien Python dan menampilkan data dari server GraphQL](./images/03-07-run-python-graphql-client.png)
 
+**Hasil yang diharapkan:** schema dapat digunakan oleh server Strawberry dan menyediakan query `books` dengan informasi judul serta penulis.
+
+![Tugas 1 - Membuat tipe Book, query books, dan schema GraphQL](./images/03-03-define-graphql-schema.png)
+
 ## 3. Kesimpulan
 
 `uv` membantu memasang dan memeriksa Python, mengelola versi proyek, membuat lingkungan virtual, dan memasang dependensi. Setelah lingkungan siap, Strawberry GraphQL dapat digunakan untuk mendefinisikan schema, menjalankan server, dan menguji query melalui GraphiQL maupun klien Python. Pastikan interpreter yang dipakai sesuai sistem operasi serta lingkungan virtual yang aktif adalah lingkungan proyek yang benar.

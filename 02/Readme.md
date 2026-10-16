@@ -20,6 +20,12 @@ Setelah Visual Studio Code ditutup, aplikasi tersebut tidak lagi terlihat pada d
 
 ![01.3 - Task Manager setelah Visual Studio Code ditutup](./images/01-03-task-manager-after-vscode-closed.png)
 
+![01.2 - Perintah PowerShell untuk memulai ulang Steam](./images/04-01-steam-restart-command.png)
+
+Screenshot kedua memperlihatkan rangkaian perintah yang sama dalam tampilan terminal yang berbeda.
+
+![01.3 - Rangkaian penghentian dan pembukaan kembali Steam](./images/04-02-steam-restart-sequence.png)
+
 ### 2.2 Memasang dan menyiapkan Python dengan `uv`
 
 #### 2.2.1 Memasang dan memeriksa `uv`
@@ -145,12 +151,6 @@ py client.py
 ### 2.4 Menghentikan dan membuka kembali Steam
 
 Kedua screenshot berikut menunjukkan kegiatan tambahan yang tidak terkait langsung dengan Python. Perintah `Get-Process steam* -ErrorAction SilentlyContinue | Stop-Process -Force` menghentikan proses Steam yang ditemukan. `Start-Sleep -Seconds 3` memberi jeda sebelum `Start-Process "steam://open/main"` meminta Steam membuka halaman utama kembali.
-
-![04.1 - Perintah PowerShell untuk memulai ulang Steam](./images/04-01-steam-restart-command.png)
-
-Screenshot kedua memperlihatkan rangkaian perintah yang sama dalam tampilan terminal yang berbeda.
-
-![04.2 - Rangkaian penghentian dan pembukaan kembali Steam](./images/04-02-steam-restart-sequence.png)
 
 ## 3. Kesimpulan
 

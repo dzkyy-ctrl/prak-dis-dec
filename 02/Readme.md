@@ -20,15 +20,19 @@ Setelah Visual Studio Code ditutup, aplikasi tersebut tidak lagi terlihat pada d
 
 ![01.3 - Task Manager setelah Visual Studio Code ditutup](./images/01-03-task-manager-after-vscode-closed.png)
 
-![01.2 - Perintah PowerShell untuk memulai ulang Steam](./images/04-01-steam-restart-command.png)
+### 2.2 Menghentikan dan membuka kembali Steam
+
+Kedua screenshot berikut menunjukkan kegiatan tambahan yang tidak terkait langsung dengan Python. Perintah `Get-Process steam* -ErrorAction SilentlyContinue | Stop-Process -Force` menghentikan proses Steam yang ditemukan. `Start-Sleep -Seconds 3` memberi jeda sebelum `Start-Process "steam://open/main"` meminta Steam membuka halaman utama kembali.
+
+![01.1 - Perintah PowerShell untuk memulai ulang Steam](./images/04-01-steam-restart-command.png)
 
 Screenshot kedua memperlihatkan rangkaian perintah yang sama dalam tampilan terminal yang berbeda.
 
-![01.3 - Rangkaian penghentian dan pembukaan kembali Steam](./images/04-02-steam-restart-sequence.png)
+![01.2 - Rangkaian penghentian dan pembukaan kembali Steam](./images/04-02-steam-restart-sequence.png)
 
-### 2.2 Memasang dan menyiapkan Python dengan `uv`
+### 2.3 Memasang dan menyiapkan Python dengan `uv`
 
-#### 2.2.1 Memasang dan memeriksa `uv`
+#### 2.3.1 Memasang dan memeriksa `uv`
 
 Skrip instalasi dijalankan melalui PowerShell. Output menunjukkan bahwa program `uv`, `uvx`, dan `uvw` telah dipasang ke direktori lokal pengguna.
 
@@ -42,7 +46,7 @@ Perintah `uv self update` memeriksa pembaruan program. Pesan hasil pada screensh
 
 ![02.3 - Memeriksa pembaruan uv](./images/02-03-update-uv.png)
 
-#### 2.2.2 Menyiapkan direktori proyek dan versi Python
+#### 2.3.2 Menyiapkan direktori proyek dan versi Python
 
 Perintah `uv python list` menampilkan versi Python yang dapat dikelola oleh `uv` dan instalasi yang sudah ditemukan di komputer. Versi yang bertanda `<download available>` dapat diunduh apabila dibutuhkan.
 
@@ -147,10 +151,6 @@ py client.py
 **Hasil yang diharapkan:** terminal menampilkan data dari server GraphQL, termasuk judul *The Great Gatsby* dan penulis F. Scott Fitzgerald. Hasil tersebut seharusnya sesuai dengan query yang dicoba melalui GraphiQL.
 
 ![Tugas 2 - Menjalankan klien Python dan menampilkan data dari server GraphQL](./images/03-07-run-python-graphql-client.png)
-
-### 2.4 Menghentikan dan membuka kembali Steam
-
-Kedua screenshot berikut menunjukkan kegiatan tambahan yang tidak terkait langsung dengan Python. Perintah `Get-Process steam* -ErrorAction SilentlyContinue | Stop-Process -Force` menghentikan proses Steam yang ditemukan. `Start-Sleep -Seconds 3` memberi jeda sebelum `Start-Process "steam://open/main"` meminta Steam membuka halaman utama kembali.
 
 ## 3. Kesimpulan
 

@@ -1,4 +1,3 @@
-
 import time
 from raft_module import RaftNode, State
 
